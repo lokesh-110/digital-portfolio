@@ -1,69 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h1 class="logo">MyPortfolio</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>lokesh</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h2>Hello, I'm <span> lokesh.R</span></h2>
-        <p>A Web Developer & Designer</p>
-        <button onclick="scrollToSection('projects')">View My Work</button>
-    </section>
+  <section id="about">
+    <img src="profile.jpg" alt="Profile Image">
+    <h2>About Me</h2>
+    <p>Hi, I'm lokesh, a passionate Web Developer who loves turning ideas into real-world, responsive websites and interactive applications. I specialize in HTML, CSS, JavaScript, and modern front-end tools to create seamless user experiences</p>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer specializing in creating beautiful and responsive websites. I love coding, design, and bringing ideas to life on the web.</p>
-    </section>
+  <section id="portfolio">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>A cool project I built using HTML and CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Quiz App</h3>
+        <p>A JavaScript app for task management.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>profile</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Digital portfolio</h3>
-          
-            </div>
-            <div class="project-card">
-                <h3>Mini Calculator</h3>
-              
-            </div>
-        </div>
-    </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" id="name" required>
+      <input type="email" placeholder="Your Email" id="email" required>
+      <textarea placeholder="Your Message" id="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <footer>
+    <p>© 2025 John Doe. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Muthukumaran R. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
